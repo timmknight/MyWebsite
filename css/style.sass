@@ -1,108 +1,237 @@
+//*******************General Styling & Fonts************************
+
 body
-  // background-color: black
   font-family: 'Roboto Condensed' sans-serif
 
+p
+  margin: 0
 
-#container
-  background-image: url("feature_image.jpg")
-  background-size: cover
-  background-attachment: fixed
-  // background-color: green
-  width: 100vw
-  // padding: 12.5% 25% 12.5% 25%
-  height: 100vh
-  position: fixed
-  z-index: -3
-  // top: 5vh
+h3
+  margin: 0
 
-#container1
-  background-image: url("2.jpg")
-  background-size: cover
-  background-attachment: fixed
-  // background-color: orange
-  width: 100%
-  // padding: 12.5% 25% 12.5% 25%
-  height: 95vh
-  position: relative
-  z-index: -1
-  top: 5vh
+//*******************Font Colours and Removing Link Styling*****************
 
+.name, .about, .portfolio
+  color: white
 
-.clear
-  display: flex
-  flex-direction: row
-  align-items: center
-  justify-content: center
-  height: 95vh
-  position: absolute
+.navlink, .contact, a
+  color: #8A8A8A
+  text-decoration: none
 
-  // background-color: yellow
-  top: 5vh
-  width: 100vw
+//*******************Colours************************
 
+nav, .contact
+  background-color: #383838
 
-.name
-  background-color: gray
-  font-size: 3em
-  width: 270px
-  display: flex
-  flex-direction: row
-  align-items: center
-  justify-content: center
+.skill
+  background-color: #F3F4F4
 
+.about, .portfolio
+  background-color: #276FDB
 
-
-// .name, .about
-  width: 250px
-  // height: 500px
-
-.name, a, .about, .skills, .portfolio, .contact
-  color: #1cff94
-
-.name, nav, .about, .skills, .portfolio, .contact
-
-  display: flex
-  flex-direction: row
-  align-items: center
-  justify-content: center
-
-// .name
-//
-//   height: 100%
+//*******************Navigation Bar***************
 
 nav
   width: 100%
-  background-color: white
-  height: 5vh
+  // background-color: #383838
   font-size: 1.1em
-  position: fixed
-  z-index: 1
-
-a
-  text-decoration: none
 
 .navlink
+  // box-sizing: border-box
+  margin: 5px 8%
+  transition: color 1s
+
+.navlink:hover
+
+  // transition-timing-function: linear
+  color: white
+
+//*******************Box Sizing********************
+
+.navlink, .project, .skill
   box-sizing: border-box
-  margin: 10px 8%
 
-.about, .skills
-  top: 100vh
+//*******************Flex Box Row & Centering***********
 
-.about, .skills, .portfolio, .contact
-  height: 50vh
+nav, .about, .contact, p, .contact, .aboutcontainer, .clear, .name, .project, .skill, .contactrow
+  text-align: center
+  display: flex
+  flex-direction: row
+  align-items: center
+  justify-content: center
+
+//********************Flex Box Column*******************
+
+.contact, .maillogo, .contactrow, .name, .skill
+  display: flex
+  flex-direction: column
+
+
+//********************Clear Image Section***************
+
+#container
+  background-image: url("tube.jpg")
+  background-size: cover
+  background-attachment: fixed
   width: 100vw
+  height: 100vh
+  top: 0
+  position: fixed
+  z-index: -1
+
+
+//*********************Name Styling and Positioning**********************
+
+.name
+  font-size: 1.5em
+  top: 40vh
   position: relative
 
-.about
-  background-color: red
+.nametext
+  margin: 0
+  padding: 2px
 
 
+//*********************Skill, About, Portfolio and Contact Position**********************
 
-.skills
-  // background-color: pink
+.about, .skills, .portfolio, .contact
+  top: 100vh
+  position: relative
+
+.about, .portfolio, .contact
+  width: 100vw
+
+//*********************Skill Section********************
+
+.skill
+  float: left
+  border-bottom: 1px solid #8A8A8A
+  width: 50vw
+
+div.skills
+  p
+    margin: 0
+    padding-bottom: 10px
+#skill1, #skill3, #skill5, #skill7
+  border-right: 1px solid #8A8A8A
+
+
+#skill1, #skill2
+  border-top: 1px solid #8A8A8A
+
+//**********************About Section*******************
+
+.aboutcontainer
+  padding: 20px 0
+  width: 90%
+  border-bottom: 1px solid #383838
+
+#abouttext
+  width: 70%
+  min-width: 300px
+
+
+//**********************Portfolio Section****************
 
 .portfolio
-  background-color: purple
+  overflow: auto
+  padding: 30px 0
+
+
+div.portfolio
+  div.project
+    p
+      width: 80%
+      margin: auto
+      border-bottom: 1px solid #383838
+      padding-bottom: 20px
+      height: 100px
+
+.project
+  width: 50%
+  // height: 170px
+  float: left
+  display: block
+  padding: 5px
+  
+div.portfolio
+  div.project
+    a
+      color: white
+
+
+//*************************Contact Section************
+
+.contactblock
+  padding-bottom:20px
 
 .contact
-  background-color: orange
+  line-height: 1.5em
+
+.contactblock
+  a:hover, p:hover
+    color: #525252
+    transition: 1s
+
+//*****************************Logo Styling************
+
+.skillimg, #github
+  height: 50px
+  width: 50px
+  padding: 10px
+
+#mail, #phone, #facebook, #github, #linkedin
+  height:38px
+  width: 38px
+
+#facebook, #github, #linkedin
+  padding: 0 10px
+
+svg
+  padding: 7px
+
+svg:hover #github
+  fill: #525252 !important
+
+svg:hover #facebook
+  fill: #525252 !important
+
+svg:hover #linkedin
+  fill: #525252 !important
+
+#github, #facebook, #linkedin
+  transition: 1s
+
+
+.socialmedia
+  padding: 20px 0
+
+//******************************Media Query*****************
+
+@media screen and (min-width: 768px)
+  //***************Name Size*********************
+  .name
+    font-size: 2.5em
+
+  //**************Portfolio Section******************
+  .project
+    width: 25%
+    height: 100%
+
+  #p1, #p2, #p3
+    border-right: 1px solid #383838
+
+  div.portfolio
+    div.project
+      p
+        border-bottom: 0px
+
+  //**************Contact Section******************
+  .contactblock
+    padding-bottom: 40px
+    width: 30%
+
+  .contactrow
+    width: 100vw
+    flex-direction: row
+    padding-bottom: 0

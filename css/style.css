@@ -1,83 +1,230 @@
+/* line 2, /Users/Tim/Documents/mysite/css/style.sass */
 body {
-  font-family: "Roboto Condensed" sans-serif; }
+  font-family: 'Roboto Condensed' sans-serif; }
 
+/* line 5, /Users/Tim/Documents/mysite/css/style.sass */
+p {
+  margin: 0; }
+
+/* line 8, /Users/Tim/Documents/mysite/css/style.sass */
+h3 {
+  margin: 0; }
+
+/* line 12, /Users/Tim/Documents/mysite/css/style.sass */
+.name, .about, .portfolio {
+  color: white; }
+
+/* line 15, /Users/Tim/Documents/mysite/css/style.sass */
+.navlink, .contact, a {
+  color: #8A8A8A;
+  text-decoration: none; }
+
+/* line 20, /Users/Tim/Documents/mysite/css/style.sass */
+nav, .contact {
+  background-color: #383838; }
+
+/* line 23, /Users/Tim/Documents/mysite/css/style.sass */
+.skill {
+  background-color: #F3F4F4; }
+
+/* line 26, /Users/Tim/Documents/mysite/css/style.sass */
+.about, .portfolio {
+  background-color: #276FDB; }
+
+/* line 30, /Users/Tim/Documents/mysite/css/style.sass */
+nav {
+  width: 100%;
+  font-size: 1.1em; }
+
+/* line 34, /Users/Tim/Documents/mysite/css/style.sass */
+.navlink {
+  margin: 5px 8%;
+  transition: color 1s; }
+
+/* line 38, /Users/Tim/Documents/mysite/css/style.sass */
+.navlink:hover {
+  color: white; }
+
+/* line 43, /Users/Tim/Documents/mysite/css/style.sass */
+.navlink, .project, .skill {
+  box-sizing: border-box; }
+
+/* line 47, /Users/Tim/Documents/mysite/css/style.sass */
+nav, .about, .contact, p, .contact, .aboutcontainer, .clear, .name, .project, .skill, .contactrow {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+
+/* line 55, /Users/Tim/Documents/mysite/css/style.sass */
+.contact, .maillogo, .contactrow, .name, .skill {
+  display: flex;
+  flex-direction: column; }
+
+/* line 61, /Users/Tim/Documents/mysite/css/style.sass */
 #container {
-  background-image: url("feature_image.jpg");
+  background-image: url("tube.jpg");
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
   height: 100vh;
+  top: 0;
   position: fixed;
-  z-index: -3; }
+  z-index: -1; }
 
-#container1 {
-  background-image: url("2.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 95vh;
-  position: relative;
-  z-index: -1;
-  top: 5vh; }
-
-.clear {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  height: 95vh;
-  position: absolute;
-  top: 5vh;
-  width: 100vw; }
-
+/* line 73, /Users/Tim/Documents/mysite/css/style.sass */
 .name {
-  background-color: gray;
-  font-size: 3em;
-  width: 270px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
-.name, a, .about, .skills, .portfolio, .contact {
-  color: #1cff94; }
-
-.name, nav, .about, .skills, .portfolio, .contact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center; }
-
-nav {
-  width: 100%;
-  background-color: white;
-  height: 5vh;
-  font-size: 1.1em;
-  position: fixed;
-  z-index: 1; }
-
-a {
-  text-decoration: none; }
-
-.navlink {
-  box-sizing: border-box;
-  margin: 10px 8%; }
-
-.about, .skills {
-  top: 100vh; }
-
-.about, .skills, .portfolio, .contact {
-  height: 50vh;
-  width: 100vw;
+  font-size: 1.5em;
+  top: 40vh;
   position: relative; }
 
-.about {
-  background-color: red; }
+/* line 78, /Users/Tim/Documents/mysite/css/style.sass */
+.nametext {
+  margin: 0;
+  padding: 2px; }
 
+/* line 84, /Users/Tim/Documents/mysite/css/style.sass */
+.about, .skills, .portfolio, .contact {
+  top: 100vh;
+  position: relative; }
+
+/* line 88, /Users/Tim/Documents/mysite/css/style.sass */
+.about, .portfolio, .contact {
+  width: 100vw; }
+
+/* line 92, /Users/Tim/Documents/mysite/css/style.sass */
+.skill {
+  float: left;
+  border-bottom: 1px solid #8A8A8A;
+  width: 50vw; }
+
+/* line 98, /Users/Tim/Documents/mysite/css/style.sass */
+div.skills p {
+  margin: 0;
+  padding-bottom: 10px; }
+
+/* line 101, /Users/Tim/Documents/mysite/css/style.sass */
+#skill1, #skill3, #skill5, #skill7 {
+  border-right: 1px solid #8A8A8A; }
+
+/* line 105, /Users/Tim/Documents/mysite/css/style.sass */
+#skill1, #skill2 {
+  border-top: 1px solid #8A8A8A; }
+
+/* line 109, /Users/Tim/Documents/mysite/css/style.sass */
+.aboutcontainer {
+  padding: 20px 0;
+  width: 90%;
+  border-bottom: 1px solid #383838; }
+
+/* line 114, /Users/Tim/Documents/mysite/css/style.sass */
+#abouttext {
+  width: 70%;
+  min-width: 300px; }
+
+/* line 120, /Users/Tim/Documents/mysite/css/style.sass */
 .portfolio {
-  background-color: purple; }
+  overflow: auto;
+  padding: 30px 0; }
 
+/* line 127, /Users/Tim/Documents/mysite/css/style.sass */
+div.portfolio div.project p {
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid #383838;
+  padding-bottom: 20px;
+  height: 100px; }
+
+/* line 134, /Users/Tim/Documents/mysite/css/style.sass */
+.project {
+  width: 50%;
+  float: left;
+  display: block;
+  padding: 5px; }
+
+/* line 142, /Users/Tim/Documents/mysite/css/style.sass */
+div.portfolio div.project a {
+  color: white; }
+
+/* line 147, /Users/Tim/Documents/mysite/css/style.sass */
+.contactblock {
+  padding-bottom: 20px; }
+
+/* line 150, /Users/Tim/Documents/mysite/css/style.sass */
 .contact {
-  background-color: orange; }
+  line-height: 1.5em; }
 
-/*# sourceMappingURL=style.css.map */
+/* line 154, /Users/Tim/Documents/mysite/css/style.sass */
+.contactblock a:hover, .contactblock p:hover {
+  color: #525252;
+  transition: 1s; }
+
+/* line 159, /Users/Tim/Documents/mysite/css/style.sass */
+.skillimg, #github {
+  height: 50px;
+  width: 50px;
+  padding: 10px; }
+
+/* line 164, /Users/Tim/Documents/mysite/css/style.sass */
+#mail, #phone, #facebook, #github, #linkedin {
+  height: 38px;
+  width: 38px; }
+
+/* line 168, /Users/Tim/Documents/mysite/css/style.sass */
+#facebook, #github, #linkedin {
+  padding: 0 10px; }
+
+/* line 171, /Users/Tim/Documents/mysite/css/style.sass */
+svg {
+  padding: 7px; }
+
+/* line 174, /Users/Tim/Documents/mysite/css/style.sass */
+svg:hover #github {
+  fill: #525252 !important; }
+
+/* line 177, /Users/Tim/Documents/mysite/css/style.sass */
+svg:hover #facebook {
+  fill: #525252 !important; }
+
+/* line 180, /Users/Tim/Documents/mysite/css/style.sass */
+svg:hover #linkedin {
+  fill: #525252 !important; }
+
+/* line 183, /Users/Tim/Documents/mysite/css/style.sass */
+#github, #facebook, #linkedin {
+  transition: 1s; }
+
+/* line 187, /Users/Tim/Documents/mysite/css/style.sass */
+.socialmedia {
+  padding: 20px 0; }
+
+@media screen and (min-width: 768px) {
+  /* line 192, /Users/Tim/Documents/mysite/css/style.sass */
+  .name {
+    font-size: 2.5em; }
+
+  /* line 195, /Users/Tim/Documents/mysite/css/style.sass */
+  .project {
+    width: 25%;
+    height: 100%; }
+
+  /* line 199, /Users/Tim/Documents/mysite/css/style.sass */
+  #p1, #p2, #p3 {
+    border-right: 1px solid #383838; }
+
+  /* line 204, /Users/Tim/Documents/mysite/css/style.sass */
+  div.portfolio div.project p {
+    border-bottom: 0px; }
+
+  /* line 207, /Users/Tim/Documents/mysite/css/style.sass */
+  .contactblock {
+    padding-bottom: 40px;
+    width: 30%; }
+
+  /* line 211, /Users/Tim/Documents/mysite/css/style.sass */
+  .contactrow {
+    width: 100vw;
+    flex-direction: row;
+    padding-bottom: 0; }
+ }
