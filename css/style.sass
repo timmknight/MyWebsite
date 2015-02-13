@@ -11,52 +11,73 @@ h3
 
 //*******************Font Colours and Removing Link Styling*****************
 
-.name, .about, .portfolio
+nav
+  color: black
+ 
+.name
+  color: #F0F0F0 
+
+.about  
+  color: black
+
+.portfolio
   color: white
 
-.navlink, .contact, a
-  color: #8A8A8A
+a, .contactlink, #navname
+  color: black 
   text-decoration: none
 
-//*******************Colours************************
+//*******************Navigation Bar*************** 
+header
+  position: fixed   
+  width: 100vw  
+  z-index: 2
 
-nav, .contact
-  background-color: #383838
-
-.skill
-  background-color: #F3F4F4
-
-.about, .portfolio
-  background-color: #276FDB
-
-//*******************Navigation Bar***************
+#navname  
+  display: none
 
 nav
   width: 100%
-  // background-color: #383838
+  background-color: #F4F4F4 
   font-size: 1.1em
+  height: 5vh
+  position: fixed
+  float: right
+  display: inline-block
 
 .navlink
-  // box-sizing: border-box
-  margin: 5px 8%
-  transition: color 1s
+  margin: 0 4%
+  padding: 8px 0 
+  transition: color 0.5s
+  transition: font-size 0.5s
+  width: 100% 
 
-.navlink:hover
+#navtext
+  transition: color 0.5s
+  transition: font-size 0.5s
 
-  // transition-timing-function: linear
-  color: white
+.navlink:hover, #navtext:hover   
+  transition-timing-function: linear
+  color: #046DD5   
+  font-size: 1.1em
+
+#navname
+  background-color: #F4F4F4
+
+header, nav
+  border-bottom: 3px solid #B8B8B8
 
 //*******************Box Sizing********************
 
-.navlink, .project, .skill
+.navlink, .project, .skill 
   box-sizing: border-box
 
 //*******************Flex Box Row & Centering***********
 
-nav, .about, .contact, p, .contact, .aboutcontainer, .clear, .name, .project, .skill, .contactrow
+nav, .about, .contact, p, .contact, .aboutcontainer, .clear, .name, .project, .skill, .contactrow, #navname, h4
   text-align: center
   display: flex
-  flex-direction: row
+  flex-direction: row 
   align-items: center
   justify-content: center
 
@@ -64,116 +85,138 @@ nav, .about, .contact, p, .contact, .aboutcontainer, .clear, .name, .project, .s
 
 .contact, .maillogo, .contactrow, .name, .skill
   display: flex
-  flex-direction: column
+  flex-direction: column 
 
 
-//********************Clear Image Section***************
+//********************Container Section***************
 
 #container
-  background-image: url("tube.jpg")
-  background-size: cover
-  background-attachment: fixed
   width: 100vw
-  height: 100vh
-  top: 0
-  position: fixed
+  height: 100vh 
+  position: relative
   z-index: -1
+  background-color: #046DD5
 
+//*********************Logo**********************
+
+#logo 
+  height: 300px
+  width: 200px
 
 //*********************Name Styling and Positioning**********************
 
 .name
-  font-size: 1.5em
-  top: 40vh
+  font-size: 2.5em
+  top: 5vh       
   position: relative
 
 .nametext
-  margin: 0
-  padding: 2px
+  padding-bottom: 40px
 
+#home
+  height: 80vh  
+  top: 15vh 
 
 //*********************Skill, About, Portfolio and Contact Position**********************
 
 .about, .skills, .portfolio, .contact
-  top: 100vh
   position: relative
 
-.about, .portfolio, .contact
+.about, .contact
   width: 100vw
 
 //*********************Skill Section********************
-
 .skill
   float: left
-  border-bottom: 1px solid #8A8A8A
   width: 50vw
 
-div.skills
+div.skills 
   p
     margin: 0
     padding-bottom: 10px
-#skill1, #skill3, #skill5, #skill7
-  border-right: 1px solid #8A8A8A
+    color: #212121
 
+#skill1, #skill2, #skill3, #skill4, #skill5, #skill6, #skill7, #skill8
+  background-color: #F4F4F4
 
 #skill1, #skill2
-  border-top: 1px solid #8A8A8A
+  border-top:  3px solid #B8B8B8 
+
+#skill7, #skill8
+  border-bottom:  3px solid #B8B8B8 
 
 //**********************About Section*******************
 
 .aboutcontainer
   padding: 20px 0
-  width: 90%
-  border-bottom: 1px solid #383838
+  width: 100%
+  background-color: white
+  margin: 5% 5% 0% 5%
+  border-radius: 5px
 
 #abouttext
   width: 70%
   min-width: 300px
 
+.about
+  position: relative
+  background-color: #F4F4F4
 
 //**********************Portfolio Section****************
 
 .portfolio
   overflow: auto
-  padding: 30px 0
-
+  padding: 1% 0 20px 0  
+  border-bottom: solid 3px #B8B8B8 
+  background-color: #F4F4F4
 
 div.portfolio
   div.project
     p
       width: 80%
       margin: auto
-      border-bottom: 1px solid #383838
-      padding-bottom: 20px
       height: 100px
 
 .project
-  width: 50%
-  // height: 170px
+  width: 90%
   float: left
   display: block
-  padding: 5px
-  
+  background-color: white
+  margin: 5% 5% 0% 5%
+  border-radius: 5px  
+
 div.portfolio
   div.project
     a
-      color: white
+      color: black
+
+h3  
+  background-color: #046DD5
+  padding: 6px 0
+  border-radius: 5px
 
 
 //*************************Contact Section************
 
-.contactblock
-  padding-bottom:20px
-
 .contact
   line-height: 1.5em
+  padding-bottom: 15px
+  background-color: #046DD5
 
 .contactblock
-  a:hover, p:hover
-    color: #525252
+  padding-bottom: 8px
+
+.contact
+  a
+    color: white
+
+.contactblock
+  a:hover
+    color: #B8B8B8 
+    scale: 2
     transition: 1s
 
-//*****************************Logo Styling************
+//*****************************Skill and contact Logo Styling************
 
 .skillimg, #github
   height: 50px
@@ -181,7 +224,7 @@ div.portfolio
   padding: 10px
 
 #mail, #phone, #facebook, #github, #linkedin
-  height:38px
+  height: 38px
   width: 38px
 
 #facebook, #github, #linkedin
@@ -191,35 +234,118 @@ svg
   padding: 7px
 
 svg:hover #github
-  fill: #525252 !important
+  fill: #B8B8B8  !important
 
 svg:hover #facebook
-  fill: #525252 !important
+  fill: #B8B8B8  !important
 
 svg:hover #linkedin
-  fill: #525252 !important
+  fill: #B8B8B8  !important
 
 #github, #facebook, #linkedin
-  transition: 1s
-
+  transition: 0.5s
 
 .socialmedia
   padding: 20px 0
 
+.skill
+  img
+    transition: 2s
+
+.skill
+  img:hover
+    transform: rotate(360deg) 
+   
+.animate
+  animation-name: animate
+  -webkit-animation-name: animate
+
+  animation-duration: 2s
+  -webkit-animation-duration: 2s
+
+  animation-timing-function: ease
+  -webkit-animation-timing-function: ease
+
+  visibility: visible !important
+
+
+@keyframes animate 
+  0% 
+    transform: scale(0)
+    opacity: 0.0   
+  
+  100% 
+    transform: scale(1)
+    opacity: 1 
+ 
+#navname
+  display: none
+
 //******************************Media Query*****************
 
 @media screen and (min-width: 768px)
-  //***************Name Size*********************
+
+  #navhome
+    display: none
+
+  #navname
+    float: left
+    text-align: left
+    width: 60vw
+    justify-content: left
+    display: flex
+  
+  #home
+    width: 100vw
+
+  h4, nav
+    position: inherit
+    z-index: 1
+    min-height: 35px
+
+  h4
+    float: left 
+    margin: 0 0 0 12% 
+    font-size: 1.1em
+
+  nav  
+    width: 40vw
+    z-index: 1
+    float: right
+    right: 0
+
+  .navlink
+    margin: 0
+
+  #logo
+    height: 300px  
+    width: 300px
+
+  h4, .navlink, #navname
+    transition: font-size 0.5s
+
   .name
-    font-size: 2.5em
+    font-size: 3.5em
+
+  //****************Skills***********************
+  .skill
+    width: 25vw
+
+  #skill1, #skill2, #skill3, #skill4
+    border-top: solid 3px #B8B8B8
+ 
+  #skill5, #skill6, #skill7, #skill8 
+    border-bottom: 3px solid #B8B8B8 
+
+  //**************About Section******************
+  .aboutcontainer
+    margin: 2.5% 2.5% 0% 2.5%
 
   //**************Portfolio Section******************
   .project
-    width: 25%
-    height: 100%
-
-  #p1, #p2, #p3
-    border-right: 1px solid #383838
+    width: 45%
+    margin: 1% 2.5%   
+    max-height: 200px
 
   div.portfolio
     div.project
@@ -228,7 +354,7 @@ svg:hover #linkedin
 
   //**************Contact Section******************
   .contactblock
-    padding-bottom: 40px
+    padding-bottom: 15px
     width: 30%
 
   .contactrow

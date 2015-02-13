@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
     <title>Tim Knight | Web Developer</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <nav><a href="#skills" class="navlink">Skills</a><a href="#about" class="navlink">About</a><a href="#portfolio" class="navlink">Portfolio</a><a href="#contact" class="navlink">Contact</a></nav>
-    <div id="home" class="name"><p>Tim Knight</p><p>Web Developer</p></div>
-    <div class="clear">   </div>
-    <div id="container"></div>
+    <div id="home" class="name">
+      <div>
+        <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 50 90" style="enable-background:new 0 0 50 90;" xml:space="preserve">
+        <polygon id = "logo1" style="fill:#FFFFFF;" points="43.5,44 47.6,44 49.8,44 49.8,0.7 25.1,15.9 0,0.2 0,30.8 6.3,30.8 6.3,13.7 22.5,23.9
+        25,25.5 27.6,23.9 43.5,14.1 43.5,35.2 6.3,35.2 3.4,35.2 0,35.2 0,58.1 25.1,89.7 49.8,58.6 49.8,48.4 43.5,48.4 43.5,54.7
+        25.1,77.9 6.3,54.2 6.3,44 "/>
+      </svg>
+
+      </div>
+      <p class="nametext">Tim Knight <br> Front End Developer</p></div>
+  <!--   <div class="clear">   </div> -->
+<!--     <div id="container"></div> -->
+
     <div id="skills" class="skills">
-      <div id="skill1" class="skill"><img src="css/html3.svg" alt="" id="htmlicon" class="skillimg">
+      <div id="skill1" class="skill"><img src="css/logo/html3.svg" alt="" id="htmlicon" class="skillimg">
         <p>HTML & HTML5</p>
       </div>
-      <div id="skill2" class="skill"><img src="css/css.svg" alt="" id="cssicon" class="skillimg">
+      <div id="skill2" class="skill"><img src="css/logo/css.svg" alt="" id="cssicon" class="skillimg">
         <p>CSS & CSS3</p>
       </div>
-      <div id="skill3" class="skill"><img src="css/js1.svg" alt="" id="jsicon" class="skillimg">
+      <div id="skill3" class="skill"><img src="css/logo/js1.svg" alt="" id="jsicon" class="skillimg">
         <p>JavaScript</p>
       </div>
-      <div id="skill4" class="skill"><img src="css/jquery.svg" alt="" id="jqueryicon" class="skillimg">
+      <div id="skill4" class="skill"><img src="css/logo/jquery.svg" alt="" id="jqueryicon" class="skillimg">
         <p>jQuery</p>
       </div>
-      <div id="skill5" class="skill"><img src="css/responsive.svg" alt="" id="responsiveicon" class="skillimg">
+      <div id="skill5" class="skill"><img src="css/logo/responsive.svg" alt="" id="responsiveicon" class="skillimg">
         <p>Responsive Desgin</p>
       </div>
-      <div id="skill6" class="skill"><img src="css/git.svg" alt="" id="giticon" class="skillimg">
+      <div id="skill6" class="skill"><img src="css/logo/git.svg" alt="" id="giticon" class="skillimg">
         <p>Version Control</p>
       </div>
-      <div id="skill7" class="skill"><img src="css/sass.svg" alt="" id="sassicon" class="skillimg">
+      <div id="skill7" class="skill"><img src="css/logo/sass.svg" alt="" id="sassicon" class="skillimg">
         <p>Sass</p>
       </div>
-      <div id="skill8" class="skill"><img src="css/jquery.svg" alt="" id="jqueryicon" class="skillimg">
-        <p>jQuery</p>
+      <div id="skill8" class="skill"><img src="css/logo/node.svg" alt="" id="jqueryicon" class="skillimg">
+        <p>Node.js</p>
       </div>
     </div>
+    <div class='a'></div>
     <div id="about" class="about">
       <div class="aboutcontainer">
-        <p id="abouttext">I'm a 24 year old developer working mainly with JavaScript. At present I'm currently looking for employment opportunities either as a JavaScript developer or Front-End developer. When I'm not making websites I enjoy scuba diving, skiing, mixed martial arts, cooking and socialising. If you would like to discuss employment opportunites please don't hesitate to get in touch.              </p>
+        <p id="abouttext">I'm a 24 year old developer working mainly with JavaScript. At present I'm currently looking for employment opportunities either as a JavaScript or Front-End developer. When I'm not making websites I enjoy scuba diving, skiing, mixed martial arts, cooking and socialising. If you would like to discuss employment opportunites please don't hesitate to get in touch.              </p>
       </div>
     </div>
     <div id="portfolio" class="portfolio">
@@ -51,7 +67,7 @@
       </div>
       <div id="p2" class="project">
         <h3>Calculator</h3>
-        <a href="clac" target="_blank"><p>This JavaScript project is a simple calaculator in the browser.</p></a>
+        <a href="clac" target="_blank"><p>This JavaScript project is a simple calaculator built in the browser.</p></a>
       </div>
       <div id="p3" class="project">
         <h3>Etch a Sketch</h3>
@@ -96,13 +112,14 @@
       </a>
       </div>
       <div class="contactrow">
-        <div class="contactblock"><img id="mail" src="css/mail.svg">
-          <p>Email:&nbsp<a href="mailto:timmilesknight@gmail.com">timmilesknight@gmail.com</a></p>
+        <div class="contactblock"><img id="mail" src="css/logo/mail.svg">
+          <p class="contactlink">Email:&nbsp<a href="mailto:timmilesknight@gmail.com" class="contactlink">timmilesknight@gmail.com</a></p>
         </div>
-        <div class="contactblock"><img id="phone" src="css/phone.svg">
-          <p>Telephone:&nbsp<a href="tel:07783727566">07783727566</p>
+        <div class="contactblock"><img id="phone" src="css/logo/phone.svg">
+          <p class="contactlink">Telephone:&nbsp<a href="tel:07783727566" class="contactlink">07783727566</p>
         </div>
       </div>
     </div>
+    <script src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>
