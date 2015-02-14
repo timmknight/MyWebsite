@@ -1,88 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
     <title>Tim Knight | Web Developer</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Gilda+Display' rel='stylesheet' type='text/css'>
   </head>
-  <body>
-    <nav><a href="#skills" class="navlink">Skills</a><a href="#about" class="navlink">About</a><a href="#portfolio" class="navlink">Portfolio</a><a href="#contact" class="navlink">Contact</a></nav>
-    <div id="home" class="name">
-      <div>
-        <svg version="1.1" id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-        viewBox="0 0 50 90" style="enable-background:new 0 0 50 90;" xml:space="preserve">
-        <polygon id = "logo1" style="fill:#FFFFFF;" points="43.5,44 47.6,44 49.8,44 49.8,0.7 25.1,15.9 0,0.2 0,30.8 6.3,30.8 6.3,13.7 22.5,23.9
-        25,25.5 27.6,23.9 43.5,14.1 43.5,35.2 6.3,35.2 3.4,35.2 0,35.2 0,58.1 25.1,89.7 49.8,58.6 49.8,48.4 43.5,48.4 43.5,54.7
-        25.1,77.9 6.3,54.2 6.3,44 "/>
-      </svg>
-
+  <body id="top">
+    <header>
+    <div id="navname"><h4 ><a href="#top" id="navtext">Tim Knight</a></h4></div>
+      <nav><a href="#top" class="navlink" id="navhome">Home</a><a href="#about" class="navlink">About</a><a href="#skills" class="navlink" id="navskills">Skills</a><a href="#portfolio" class="navlink">Portfolio</a><a href="#contact" class="navlink" id="navcontact">Contact</a></nav>
+       </header>
+    <div id="container"> 
+     <div id="home" class="name">  
+      <div class="animate">     
+          <img id="logo" src="css/logo/download1.svg" alt="Tim Knight Logo">
+           <p class="nametext">Tim Knight <br> Front End Developer</p>
+      </div> 
+     </div>
+    </div>
+      <div id="about" class="about">
+     <div id="abouttitle" class="sectiontitle"><h1>A passion for development</h1></div>
+      <div class="aboutcontainer">
+        <p id="abouttext">I'm a 24 year old developer who is passionate about JavaScript and what it has to offer web development. I'm currently looking for employment opportunities either as a JavaScript or Front-End developer. I'm really keen to get involved in real world development projects as well as getting to grips with new technologies while continually building on my current knowledge. When I'm not making websites I enjoy scuba diving, skiing, mixed martial arts, cooking and socialising. If you would like to get in touch my contact details are in the contact section below.</p>
       </div>
-      <p class="nametext">Tim Knight <br> Front End Developer</p></div>
-  <!--   <div class="clear">   </div> -->
-<!--     <div id="container"></div> -->
-
-    <div id="skills" class="skills">
-      <div id="skill1" class="skill"><img src="css/logo/html3.svg" alt="" id="htmlicon" class="skillimg">
-        <p>HTML & HTML5</p>
+    </div>
+  <!--   <div id="skills" class="skills"> -->
+      <div id="skilltitle" class="sectiontitle"><h1>Skills</h1></div>
+      <div id="skill1" class="skill"><img src="css/logo/html3.svg" class="skillimg" alt="Html logo">
+        <p>HTML &amp; HTML5</p>
       </div>
-      <div id="skill2" class="skill"><img src="css/logo/css.svg" alt="" id="cssicon" class="skillimg">
-        <p>CSS & CSS3</p>
+      <div id="skill2" class="skill"><img src="css/logo/css1.svg" class="skillimg" alt="Css logo">
+        <p>CSS &amp; CSS3</p>
       </div>
-      <div id="skill3" class="skill"><img src="css/logo/js1.svg" alt="" id="jsicon" class="skillimg">
+      <div id="skill3" class="skill"><img src="css/logo/node.svg" class="skillimg" alt="Javascript logo">
         <p>JavaScript</p>
       </div>
-      <div id="skill4" class="skill"><img src="css/logo/jquery.svg" alt="" id="jqueryicon" class="skillimg">
+      <div id="skill4" class="skill"><img src="css/logo/jquery1.svg" class="skillimg" alt="jQuery logo">
         <p>jQuery</p>
       </div>
-      <div id="skill5" class="skill"><img src="css/logo/responsive.svg" alt="" id="responsiveicon" class="skillimg">
+      <div id="skill5" class="skill"><img src="css/logo/responsive1.svg" class="skillimg" alt="Responsive design logo">
         <p>Responsive Desgin</p>
       </div>
-      <div id="skill6" class="skill"><img src="css/logo/git.svg" alt="" id="giticon" class="skillimg">
+      <div id="skill6" class="skill"><img src="css/logo/git.svg" class="skillimg" alt="Version control logo">
         <p>Version Control</p>
       </div>
-      <div id="skill7" class="skill"><img src="css/logo/sass.svg" alt="" id="sassicon" class="skillimg">
+      <div id="skill7" class="skill"><img src="css/logo/sass.svg" class="skillimg" alt="Sass logo">
         <p>Sass</p>
       </div>
-      <div id="skill8" class="skill"><img src="css/logo/node.svg" alt="" id="jqueryicon" class="skillimg">
-        <p>Node.js</p>
+      <div id="skill8" class="skill"><img src="css/logo/angular1.svg" class="skillimg" alt="AngularJs logo">
+        <p>Angular.js</p>
       </div>
-    </div>
-    <div class='a'></div>
-    <div id="about" class="about">
-      <div class="aboutcontainer">
-        <p id="abouttext">I'm a 24 year old developer working mainly with JavaScript. At present I'm currently looking for employment opportunities either as a JavaScript or Front-End developer. When I'm not making websites I enjoy scuba diving, skiing, mixed martial arts, cooking and socialising. If you would like to discuss employment opportunites please don't hesitate to get in touch.              </p>
-      </div>
-    </div>
     <div id="portfolio" class="portfolio">
-      <div id="p1" class="project">
-        <h3>Snake</h3>
-        <a href="snake" target="_blank"><p>This JavaScript project recreating the classic game snake in the browser.</p></a>
+    <div id="portfoliotitle" class="sectiontitle"><h1>Portfolio</h1></div>
+      <div class="project">
+        <h2>Snake</h2>
+        <a href="snake/snake.html" target="_blank"><p  id="p1">This project recreates the classic game snake in the browser.</p></a>
       </div>
-      <div id="p2" class="project">
-        <h3>Calculator</h3>
-        <a href="clac" target="_blank"><p>This JavaScript project is a simple calaculator built in the browser.</p></a>
+      <div class="project">
+        <h2>Calculator</h2>
+        <a href="calculator/calc.html" target="_blank"><p id="p2">This project is a simple calaculator built in the browser.</p></a>
       </div>
-      <div id="p3" class="project">
-        <h3>Etch a Sketch</h3>
-        <a href="etch" target="_blank"><p>This jQuery project creates an etch a sketch with various different features.</p></a>
+      <div class="project">
+        <h2>Etch a Sketch</h2>
+        <a href="etch/etch.html" target="_blank"><p>This jQuery project creates an etch a sketch with various different features.</p></a>
       </div>
-      <div id="p4" class="project">
-        <h3>Tic Tac Toe</h3>
-        <a href="tictactoe" target="_blank"><p>The classic two player game recreated in the browser using JavaScript.</p></a>
+      <div class="project">
+        <h2>Tic Tac Toe</h2>
+        <a href="tictactoe/tictactoe.html" target="_blank"><p id="p4">The classic two player game recreated in the browser using JavaScript.</p></a>
       </div>
     </div>
     <div id="contact" class="contact">
       <div class="socialmedia">
-        <a href="www.github.com/timmknight"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <a href="http://www.github.com/timmknight" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 38 38" style="enable-background:new 0 0 38 38;width: 38px;" xml:space="preserve">
-        <path style="fill:#8A8A8A;" id='github' d="M36,2.1C34.6,0.7,33,0,31,0H7.1c-2,0-3.6,0.7-5,2.1S0,5.2,0,7.7v23.8c0,1.4,0.7,3,2.1,4.4
+        <path style="fill:#FFFFFF;" id='github' d="M36,2.1C34.6,0.7,33,0,31,0H7.1c-2,0-3.6,0.7-5,2.1S0,5.2,0,7.7v23.8c0,1.4,0.7,3,2.1,4.4
         s3,2.1,5,2.1h5.5c0.4,0,0.6,0,0.8,0c0.2,0,0.4-0.2,0.5-0.4c0.2-0.2,0.3-0.5,0.3-0.8c0-0.1,0-0.6,0-1.7s0-1.9,0-2.6l-0.5,0.1
         c-0.4,0.1-0.8,0.1-1.4,0.1c-0.5,0-1.1-0.1-1.7-0.2c-0.6-0.2-1.2-0.4-1.7-0.7c-0.5-0.5-0.9-0.9-1.1-1.5l-0.2-0.5
         c-0.2-0.4-0.5-0.8-0.8-1.3c-0.4-0.5-0.7-0.8-1.1-1l-0.2-0.1c-0.2-0.1-0.2-0.2-0.4-0.3C5.1,26.9,5,26.8,5,26.7s0-0.2,0.2-0.3
@@ -94,32 +89,26 @@
         c-0.5,0.6-1.2,1.2-2,1.7c-0.8,0.5-1.6,0.8-2.4,1c-0.8,0.2-1.6,0.4-2.6,0.5c0.8,0.7,1.3,1.9,1.3,3.6v5.9c0,0.3,0,0.5,0.2,0.7
         c0.1,0.2,0.2,0.3,0.5,0.4c0.2,0.1,0.4,0.2,0.5,0.2s0.4,0,0.6,0h5.5c2,0,3.6-0.7,5-2.1s2.1-3,2.1-5V7.1C38.1,5.2,37.4,3.5,36,2.1z"/>
       </svg></a>
-        <a href="www.facebook.com/tim.m.knight.7"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <a href="http://www.facebook.com/tim.m.knight.7" target="_blank"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 38 38" style="enable-background:new 0 0 38 38;width: 38px;" xml:space="preserve">
-          <path id="facebook" style="fill:#8A8A8A;'" d="M38,6.3C38,3,35,0,31.7,0H6.3C3,0,0,3,0,6.3v25.3c0,3.3,3,6.3,6.3,6.3
+          <path id="facebook" style="fill:#FFFFFF;'" d="M38,6.3C38,3,35,0,31.7,0H6.3C3,0,0,3,0,6.3v25.3c0,3.3,3,6.3,6.3,6.3
           H19V23.6h-4.6v-6.3H19v-2.4c0-4.3,3.3-8.1,7.1-8.1h5.1v6.4h-5.1c-0.5,0-1.2,0.7-1.2,1.7v2.5h6.3v6.3h-6.3V38h6.8
           c3.3,0,6.3-3,6.3-6.3C38,31.7,38,6.3,38,6.3z"/>
         </svg>
       </a>
-        <a href="www.linkedin.com/profile/view?id=346711298&trk=nav_responsive_tab_profile"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          viewBox="0 0 38 38" style="enable-background:new 0 0 38 38;width: 38px;" xml:space="preserve">
-          <path id="linkedin" style="fill:#8A8A8A;" d="M35.2,0H2.8C1.3,0,0,1.2,0,2.7v32.5C0,36.8,1.3,38,2.8,38h32.4
-          c1.5,0,2.8-1.2,2.8-2.7V2.7C38,1.2,36.7,0,35.2,0z M11.6,31.8H5.8V14.7h5.8V31.8z M8.7,12.3L8.7,12.3c-2,0-3.2-1.3-3.2-3
-          s1.3-3,3.3-3s3.2,1.3,3.2,3S10.6,12.3,8.7,12.3z M32.2,31.8h-5.8v-9.2c0-2.3-0.8-3.9-2.9-3.9c-1.6,0-2.5,1.1-3,2.1
-          c-0.2,0.4-0.2,0.9-0.2,1.4v9.6h-5.8c0,0,0.1-15.6,0-17.2h5.8V17c0.8-1.1,2.1-2.8,5.2-2.8c3.8,0,6.6,2.4,6.6,7.8
-          C32.2,22,32.2,31.8,32.2,31.8z M20.4,17.2C20.4,17.1,20.4,17.1,20.4,17.2L20.4,17.2L20.4,17.2z"/>
+        <a href="http://www.linkedin.com/profile/view?id=346711298&amp;trk=nav_responsive_tab_profile" target="_blank"><svg width="38" height="38" xmlns="http://www.w3.org/2000/svg" >
+          <path id="linkedin" fill="#ffffff" d="m7.47327,-0.06217c-4.09116,0 -7.43954,3.35657 -7.43954,7.45793l0,23.14328c0,4.10128 3.3483,7.45671 7.43954,7.45671l23.08619,0c4.0912,0 7.43832,-3.3554 7.43832,-7.45671l0,-23.14328c0,-4.10127 -3.34711,-7.45793 -7.43832,-7.45793l-23.08619,0zm1.87115,6.28032c1.96163,0 3.1699,1.29095 3.2072,2.9879c0,1.65948 -1.24565,2.98672 -3.24514,2.98672l-0.0368,0c-1.92429,0 -3.16804,-1.32717 -3.16804,-2.98672c0,-1.6969 1.28139,-2.9879 3.24275,-2.9879l0.00004,0zm16.90443,7.93131c3.77258,0 6.60066,2.47187 6.60066,7.7838l0,9.91648l-5.73329,0l0,-9.25162c0,-2.32483 -0.82977,-3.91095 -2.90462,-3.91095c-1.58394,0 -2.52807,1.06906 -2.94258,2.1018c-0.15143,0.36948 -0.18865,0.8855 -0.18865,1.40236l0,9.65841l-5.73329,0s0.07523,-15.67198 0,-17.29472l5.73446,0l0,2.44911c0.7619,-1.17841 2.12472,-2.85471 5.1673,-2.85471l0,0.00004zm-19.80903,0.40682l5.73329,0l0,17.29354l-5.73329,0l0,-17.29354z"/>   
         </svg>
       </a>
       </div>
       <div class="contactrow">
-        <div class="contactblock"><img id="mail" src="css/logo/mail.svg">
-          <p class="contactlink">Email:&nbsp<a href="mailto:timmilesknight@gmail.com" class="contactlink">timmilesknight@gmail.com</a></p>
+        <div class="contactblock"><img id="mail" src="css/logo/mail1.svg" alt="Mail icon">
+          <p class="contactlink"><a href="mailto:timmilesknight@gmail.com" class="contactlink">Email:&nbsp;timmilesknight@gmail.com</a></p>
         </div>
-        <div class="contactblock"><img id="phone" src="css/logo/phone.svg">
-          <p class="contactlink">Telephone:&nbsp<a href="tel:07783727566" class="contactlink">07783727566</p>
+        <div class="contactblock"><img id="phone" src="css/logo/phone1.svg" alt="Phone icon">
+          <p class="contactlink"><a href="tel:07783727566" class="contactlink">Telephone:&nbsp;07783727566</a></p>
         </div>
       </div>
     </div>
-    <script src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>

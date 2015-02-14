@@ -1,9 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="512px" height="512px" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
-<path d="M30.269,0l41.072,460.815L255.719,512l184.862-51.262L481.731,0H30.269z M392.315,150.714h-0.195H176.045l5.151,57.875
-	H387.18l-15.521,173.505L255.99,414.182l-0.115,0.039h-0.077h-0.061l-115.786-32.127l-7.915-88.756h56.747l4.024,45.116
-	l62.931,16.958l0.139-0.039l62.967-16.996l6.535-73.275h-195.87L114.262,94.202h283.107L392.315,150.714z"/>
+<?xml version="1.0"?>
+<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_2" height="512.245337" width="513.333342" y="-0.239979" x="-0.857437" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#046dd5"/>
+ </g>
+ <g>
+  <title>Layer 1 copy copy</title>
+  <path id="svg_5" d="m35.787567,0.185176l41.072014,460.815008l184.377846,51.184998l184.862091,-51.261963l41.149963,-460.738042l-451.461853,0l-0.000061,0zm362.045929,150.71404l-0.194977,0l-216.075012,0l5.150955,57.874969l205.984055,0l-15.520996,173.50502l-115.669067,32.088013l-0.115082,0.039001l-0.076935,0l-0.061035,0l-115.785889,-32.127014l-7.915039,-88.756012l56.74704,0l4.023987,45.115997l62.931,16.958038l0.138885,-0.039032l62.967133,-16.996002l6.534973,-73.274994l-195.86998,0l-15.247093,-170.900017l283.107033,0l-5.054016,56.512032l0.000061,0z" fill="#ffffff"/>
+ </g>
 </svg>
